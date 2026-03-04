@@ -16,5 +16,7 @@ public partial class App : Application
     public App()
     {
         ListIO.CreateList("C:\\Users\\Work\\Desktop\\list.json");
+
+        ListIO.GetTaskList(ListIO.OpenFileSelectionDialog());
     }
 }
